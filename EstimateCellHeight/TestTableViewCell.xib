@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="TestTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="lab1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBI-CI-Axr">
+                        <rect key="frame" x="10" y="8" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lab2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-F5-gJb">
+                        <rect key="frame" x="10" y="37" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NWI-F5-gJb" firstAttribute="top" secondItem="FBI-CI-Axr" secondAttribute="bottom" constant="8" id="0Uf-0u-4AC"/>
+                    <constraint firstItem="FBI-CI-Axr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Rhj-wp-r2l"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NWI-F5-gJb" secondAttribute="trailing" constant="2" id="Ssa-l3-Dtv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FBI-CI-Axr" secondAttribute="trailing" constant="2" id="aDr-6n-woH"/>
+                    <constraint firstItem="FBI-CI-Axr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ddM-Qy-Qyo"/>
+                    <constraint firstItem="NWI-F5-gJb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="zAR-0E-ZMF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NWI-F5-gJb" secondAttribute="bottom" constant="3.5" id="zVN-BS-EHS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab1" destination="FBI-CI-Axr" id="8b4-5N-1Mg"/>
+                <outlet property="lab2" destination="NWI-F5-gJb" id="3il-vj-1uN"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="430"/>
+        </tableViewCell>
+    </objects>
+</document>
